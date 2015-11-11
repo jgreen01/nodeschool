@@ -8,7 +8,7 @@ app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
 
 app.post('/form', function(req, res) {
-	console.log(req.body.str.split('').reverse().join(''));
+	res.end(req.body.str.split('').reverse().join(''));
 });
 
 app.get('/', function(req, res) {
