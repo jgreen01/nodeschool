@@ -1,0 +1,19 @@
+{
+  "name": "json_me",
+  "version": "1.0.0",
+  "description": "Parsing a file and responding with JSON.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "rest",
+    "express"
+  ],
+  "author": "Jon Green",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
