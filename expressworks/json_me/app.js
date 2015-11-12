@@ -4,9 +4,15 @@ var fs = require('fs');
 
 app.get('/books', function(req, res) {
 	fs.readFile(process.argv[3], function(err, data) {
-		if (err) throw err;
+		if (err) return res.sendStatus(500);
 
-		res.json(JSON.parse(data));
+		try {
+			books = JSON.parse(data);
+		} catch (err) {
+			res.sendStatus(500);
+		}
+
+		res.json(books);
 	});
 });
 
