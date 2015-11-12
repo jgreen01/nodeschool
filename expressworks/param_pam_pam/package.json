@@ -1,0 +1,19 @@
+{
+  "name": "param_pam_pam",
+  "version": "1.0.0",
+  "description": "Express parameter reading code challenge.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "param",
+    "pam",
+    "express"
+  ],
+  "author": "Jon Green",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
